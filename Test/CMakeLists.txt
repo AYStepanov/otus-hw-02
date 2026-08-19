@@ -1,16 +1,16 @@
 find_package(Boost REQUIRED COMPONENTS unit_test_framework)
 
-add_executable(helloworld_test
-  test_version.cpp
+add_executable(ip_filter_test
+  IpFilterTests.cpp
 )
 
-target_compile_definitions(helloworld_test PRIVATE
+target_compile_definitions(ip_filter_test PRIVATE
   BOOST_TEST_DYN_LINK
 )
 
-target_link_libraries(helloworld_test PRIVATE
+target_link_libraries(ip_filter_test PRIVATE
   Boost::unit_test_framework
-  helloworld
+  ip_filter_lib
 )
 
-add_test(NAME helloworld_test COMMAND helloworld_test)
+add_test(NAME ip_filter_test COMMAND ip_filter_test)

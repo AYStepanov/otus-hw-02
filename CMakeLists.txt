@@ -35,7 +35,7 @@ if(WITH_BOOST_TEST)
     add_subdirectory(Test)
 endif()
 
-install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
+install(TARGETS ip_filter RUNTIME DESTINATION bin)
 
 # Generate DEB package
 set(CPACK_GENERATOR DEB)

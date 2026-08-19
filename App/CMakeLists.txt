@@ -1,7 +1,7 @@
-add_executable(helloworld_cli
+add_executable(ip_filter
   main.cpp
 )
 
-target_link_libraries(helloworld_cli PRIVATE
-  helloworld
+target_link_libraries(ip_filter PRIVATE
+  ip_filter_lib
 )
